@@ -13,14 +13,12 @@ body {
   left: 0;
   transition: all ease-in 0.3s;
 }
-.main.open {
-  left: 275px;
-  transition: all ease-in 0.3s;
-}
+
 .container {
   margin: 0 auto;
   width: 95%;
   position: relative;
+  transition: all ease-in 0.3s;
 }
 .header {
   position: relative;

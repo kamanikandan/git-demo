@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book Shop</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <header class="header">
+          <h1>The Book Shop</h1>
+          <div class="favourite">
+            <div class="heart"></div>
+            <span class="favourite-holder">0</span>
+          </div>
+        </header>
+        <section class="search-bar">
+          <form id="searchForm">
+            <input
+              type="text"
+              name="searchTxt"
+              id="searchTxt"
+              placeholder="Search products..."
+            />
+            <button type="submit"></button>
+          </form>
+        </section>
+        <div class="filter-section">
+          <div class="filter">
+            <div class="filter-trigger"><span></span> Filter</div>
+          </div>
+          <div class="sortby">
+            <label for="sortby">Sort By:</label>
+            <select name="sortby" id="sortby">
+              <option value="">---Select an Option---</option>
+              <option value="name">Sort by name</option>
+              <option value="author">Sort by author</option>
+              <option value="high">Sort by price: High to Low</option>
+              <option value="low">Sort by price: Low to High</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-section"></div>
+      </div>
+    </div>
+
+    <div class="filter-content">
+      <h2>Product Categories</h2>
+      <div class="categories_list"></div>
+      <div class="price-filter"></div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
